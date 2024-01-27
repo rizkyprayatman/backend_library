@@ -4,8 +4,7 @@
   "description": "this BE for get and filter data",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "jest"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
