@@ -1,5 +1,5 @@
 {
-  "name": "get_and_filter_backend",
+  "name": "backend-library",
   "version": "1.0.0",
   "description": "this BE for get and filter data",
   "main": "index.js",

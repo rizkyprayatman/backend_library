@@ -7,7 +7,6 @@ const libraryRoute = require("./routes/libraryRoute");
 const memberRoute = require("./routes/memberRoute");
 
 const app = express();
-const PORT = process.env.NODE_ENV === 'test' ? 8093 : process.env.PORT || 8093;
 
 const corsOptions = {
   origin: "*",
@@ -37,8 +36,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running in port http://localhost:${PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running in port http://localhost:${process.env.PORT}`);
 });
 
 module.exports = app;
